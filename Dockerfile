@@ -3,7 +3,7 @@ MAINTAINER Matt Hicks <mhicks@redhat.com>
 
 RUN yum update -y
 
-RUN yum install -y -q java-1.7.0-openjdk zookeeper-server rpm python-setuptools
+RUN yum install -y -q zookeeper-server
 RUN cp /etc/zookeeper/zoo_sample.cfg /etc/zookeeper/zoo.cfg
 
 EXPOSE 2181 2888 3888
